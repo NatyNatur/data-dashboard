@@ -29,10 +29,30 @@ header {
 	/*outline: solid 2px #000;*/
 }
 
+/* div contenedor de la info del usuario */
+#userinfo {
+	max-width: 350px;
+	max-height: 350px;
+	display: inline-flex;
+	float: right;
+}
+/* estilo de la foto del usuario */
+#usericon {
+	max-width: 50px;
+	max-height: 50px;
+	margin: auto 10px;
+}
+
+/* estilo del nick o nombre del usuario*/
+#username {
+	font-size: 1em;
+	font-weight: 500;
+	margin: auto 10px;
+}
+
 /* estilo de icon de menú en esquina superior derecha */
 #bars {
 	font-size: 30px;
-	float: right;
 	margin: 20px 50px;
 }
 /* estilo del contenedor y del título de la página*/
