@@ -33,18 +33,18 @@ header {
 #userinfo {
 	max-width: 350px;
 	max-height: 350px;
-	display: inline-flex;
+	margin: 10px 50px;
 	float: right;
 }
 /* estilo de la foto del usuario */
-#usericon {
+.usericon {
 	max-width: 50px;
 	max-height: 50px;
 	margin: auto 10px;
 }
 
 /* estilo del nick o nombre del usuario*/
-#username {
+.username {
 	font-size: 1em;
 	font-weight: 500;
 	margin: auto 10px;
@@ -53,8 +53,40 @@ header {
 /* estilo de icon de menú en esquina superior derecha */
 #bars {
 	font-size: 30px;
-	margin: 20px 50px;
+	margin: auto 10px;
 }
+
+/* estilo menú desplegable al hacer click en las barras */
+#barsmenu {
+	position: fixed; /* ¿por qué? porque se me va a la izquierda y detrás de todo x.x */
+	right: 0;
+	/*top: 80px;*/
+	width: 315px;
+	height: 400px;
+	color: #FFF;
+	background-color: #2E2F29;
+	z-index: 2000;
+	display: none; /*se cambia en evento en js */
+}
+
+/* estilo de la lista de enlaces al desplegar el menú */
+#barsmenu > ul {
+	list-style: none;
+}
+
+#barsmenu > ul > li {
+	width: 200px;
+	text-align: left;
+	margin: 50px 15px;
+	border-bottom: 2px solid #FFF;
+}
+
+#barsmenu > ul > li > a {
+	text-decoration: none;
+	color: #FFF;
+	font-weight: 700;
+}
+
 /* estilo del contenedor y del título de la página*/
 .title {
 	width: 100%;
