@@ -15,6 +15,7 @@ body {
 	height: 1000px; /* para empezar, mientras no contiene nada */
 	margin: 0;
 	color:  #2E2F29;
+	background-color: #2E2F29;
 	font-family: 'Montserrat', sans-serif;
 }
 
@@ -32,7 +33,7 @@ header {
 /* div contenedor de la info del usuario */
 #userinfo {
 	max-width: 350px;
-	max-height: 350px;
+	max-height: 80px;
 	margin: 10px 50px;
 	float: right;
 }
@@ -51,21 +52,25 @@ header {
 }
 
 /* estilo de icon de menú en esquina superior derecha */
-#bars {
+#bars-in, #bars-out {
 	font-size: 30px;
 	margin: auto 10px;
+}
+/* ambos iconos con cursor */
+#bars-out, #bars-in, .fa-chevron-down {
+	cursor: pointer;
 }
 
 /* estilo menú desplegable al hacer click en las barras */
 #barsmenu {
-	position: fixed; /* ¿por qué? porque se me va a la izquierda y detrás de todo x.x */
+	position: absolute;
 	right: 0;
 	/*top: 80px;*/
 	width: 315px;
 	height: 400px;
 	color: #FFF;
 	background-color: #2E2F29;
-	z-index: 2000;
+	/*z-index: 2000;*/
 	display: none; /*se cambia en evento en js */
 }
 
@@ -101,7 +106,49 @@ header {
 	font-weight: 700;
 	margin: 0;
 }
-/* estilo del la lista desordenada */
+/* estilo menú de sedes */
+#headquarters {
+	width: 290px;
+	height: 485px;
+	background-color: #FFF;
+	opacity:0.8;
+	color: #2E2F29;
+	list-style: none;
+	margin-left: 100px;
+	margin-top: -30px;
+	padding: 5px 20px;
+	position: absolute;
+	display: none;
+}
+/* estilo´párrafo ciudad */
+.city {
+	font-size: 1em;
+	font-weight: 700;
+	border-bottom: 2px solid #F9A91A;
+}
+
+.fa-circle {
+	color: #F9A91A;
+    margin: 5px 10px;
+}
+
+.city > li {
+	text-align: left;
+
+}
+/* estilo de los links de las generaciones*/
+.generation {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+}
+
+.generation:hover {
+	text-decoration: underline;
+}
+
+
+/* estilo de la lista desordenada */
 .menu {
 	list-style: none;
 	line-height: 50px;
@@ -115,6 +162,7 @@ header {
 	text-decoration: none;
 	color: inherit;
 	font-weight: 700;
+	font-size: 1em;
 }
 
 .menu > li {
