@@ -4,8 +4,7 @@
     <meta charset="utf-8">
     <title>Data Dashboard</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,800,900" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">
-
+    <link rel="stylesheet" href="assets/css/main.css">
   </head>
   <body>
     <header>
@@ -23,46 +22,39 @@
       </ul>
     </div>     
     </header>
-     <div class="title"><p>Selecciona la sede  <i class="fa fa-chevron-down" aria-hidden="true"></i></p>
-      <nav id="headquarters">
-        <p class="city">AREQUIPA</p>
-        <li><i class="fa fa-circle" aria-hidden="true"></i><a class="generation" href="#">2016 - II</a></li>
-        <li><i class="fa fa-circle" aria-hidden="true"></i><a class="generation" href="#">2017 - I</a></li>
-        <p class="city">CIUDAD DE MÉXICO</p>
-        <li><i class="fa fa-circle" aria-hidden="true"></i><a class="generation" href="#">2017 - I</a></li>
-        <li><i class="fa fa-circle" aria-hidden="true"></i><a class="generation" href="#">2017 - II</a></li>
-        <p class="city">LIMA</p>
-        <li><i class="fa fa-circle" aria-hidden="true"></i><a class="generation" href="#">2016 - II</a></li>
-        <li><i class="fa fa-circle" aria-hidden="true"></i><a class="generation" href="#">2017 - I</a></li>
-        <li><i class="fa fa-circle" aria-hidden="true"></i><a class="generation" href="#">2017 - II</a></li>
-        <p class="city">SANTIAGO</p>
-        <li><i class="fa fa-circle" aria-hidden="true"></i><a class="generation" href="#">2016 - II</a></li>
-        <li><i class="fa fa-circle" aria-hidden="true"></i><a class="generation" href="#">2017 - I</a></li>
-        <li><i class="fa fa-circle" aria-hidden="true"></i><a class="generation" href="#">2017 - II</a></li>
-      </nav>
-      <nav>
-        <ul class="menu">
-          <li><a href="#">OVERVIEW</a></li>
-          <li><a href="#">STUDENTS</a></li>
-          <li><a href="#">TEACHERS</a></li>
-        </ul>
-      </nav></div>
+     <div id="title"><p id="hqtitle">Selecciona un sede  <i class="fa fa-chevron-down" id="selection" aria-hidden="true"></i></p>
+        <nav id="headquarters">
+          <p><i class="fa fa-chevron-up" id="selection-in" aria-hidden="true"></i></p>
+          <p class="city">AREQUIPA</p>
+          <li><i class="fa fa-circle" aria-hidden="true"></i><a class="generation" href="assets/supphtml/aqp.html">2016 - II</a></li>
+          <li><i class="fa fa-circle" aria-hidden="true"></i><a class="generation" href="assets/supphtml/aqp2017.html">2017 - I</a></li>
+          <p class="city">CIUDAD DE MÉXICO</p>
+          <li><i class="fa fa-circle" aria-hidden="true"></i><a class="generation" href="assets/supphtml/cdmx2017-1.html">2017 - I</a></li>
+          <li><i class="fa fa-circle" aria-hidden="true"></i><a class="generation" href="assets/supphtml/cdmx2017-2.html">2017 - II</a></li>
+          <p class="city">LIMA</p>
+          <li><i class="fa fa-circle" aria-hidden="true"></i><a class="generation" href="assets/supphtml/lima2016-2.html">2016 - II</a></li>
+          <li><i class="fa fa-circle" aria-hidden="true"></i><a class="generation" href="assets/supphtml/lima2017-1.html">2017 - I</a></li>
+          <li><i class="fa fa-circle" aria-hidden="true"></i><a class="generation" href="assets/supphtml/lima2017-2.html">2017 - II</a></li>
+          <p class="city">SANTIAGO</p>
+          <li><i class="fa fa-circle" aria-hidden="true"></i><a class="generation" href="assets/supphtml/scl2016-2.html">2016 - II</a></li>
+          <li><i class="fa fa-circle" aria-hidden="true"></i><a class="generation" href="assets/supphtml/scl2017-1.html">2017 - I</a></li>
+          <li><i class="fa fa-circle" aria-hidden="true"></i><a class="generation" href="assets/supphtml/scl2017-2.html">2017 - II</a></li>
+        </nav>
+        <nav>
+          <ul class="menu">
+            <li><a href="#">OVERVIEW</a></li>
+            <li><a href="#">STUDENTS</a></li>
+            <li><a href="#">TEACHERS</a></li>
+          </ul>
+        </nav>
+      </div>
       <section id="dashboard">
-        <div id="overview">
-          
-        </div>
-        <div id="students">
-          
-        </div>
-        <div id="teachers">
-          
-        </div>
-        
+
       </section>
 		<!-- Base de datos -->
-		<script src="./js/data.js"></script>
-		<!-- Aquí va tus archivos JS -->
-    <script src="./js/app.js"></script>
+		<script src="assets/js/data.js"></script>
+		<!-- Archivo JS -->
+    <script src="assets/js/app.js"></script>
     <!-- Base de íconos -->
     <script src="https://use.fontawesome.com/3fce8f4ef7.js"></script>
   </body>
