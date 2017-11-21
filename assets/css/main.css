@@ -182,7 +182,67 @@ header {
 	font-size: 1em;
 }
 
-/* nuevo */
+section {
+	text-align: center;
+}
+
+.overview {
+	display: inline-flex;
+	width: 90%;
+	padding: 30px;
+}
+
+.enroll, .ach, .promoter {
+	width: 350px;
+	height: auto;
+	background-color: #FFF;
+	margin-right: 5%;
+}
+
+.grtt {
+	font-weight: 700;
+}
+
+.score {
+	display: inline-flex;
+}
+
+.caption {
+	font-size: 10px;
+	max-width: 140px;
+	height: auto; 
+	margin-right: 1%;
+}
+
+.nps {
+	width: 70px;;
+}
+
+.techskills {
+	width: 1000px;
+	height: 380px;
+	background-color: #FFF;
+	display: inline-flex;
+	padding: 15px;
+	margin: auto;
+}
+
+.graphimg {
+	width: 570px;
+}
+
+.cirgraph {
+	width: 290px;
+	padding: 75px 10px;
+}
+
+.captionstd {
+	font-size: 10px;
+	width: 240px;
+	text-align: left;
+}
+
+/* estilos de la data obtenida en js */
 
 #imgLab {
 	max-width: 150px;
